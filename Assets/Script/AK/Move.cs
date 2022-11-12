@@ -7,8 +7,6 @@ public class Move : MonoBehaviour
     private Vector3 _position;
     public float angle;
     private Camera _camera;
-   
-
 
     private void Start()
     {
@@ -20,8 +18,6 @@ public class Move : MonoBehaviour
         mousePosition.z = _camera.transform.position.z;
         _position = _camera.ScreenToWorldPoint(mousePosition);
         transform.LookAt(_position);
-        
     }
-
-   
+  
 }
