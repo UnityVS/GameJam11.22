@@ -77,9 +77,9 @@
     <Compile Include="Assets\Script\Keanu\Enemy.cs" />
     <Compile Include="Assets\Script\Keanu\BulletTime.cs" />
     <Compile Include="Assets\Script\AK\RayGun.cs" />
-    <Compile Include="Assets\Script\Keanu\EnemyAnim.cs" />
     <Compile Include="Assets\Script\AK\TargetCollider.cs" />
     <Compile Include="Assets\Script\AK\Lerp.cs" />
+    <Compile Include="Assets\Script\Keanu\LossArea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\POLYGON city pack\Read_me.txt" />

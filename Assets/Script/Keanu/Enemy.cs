@@ -13,9 +13,9 @@ public class Enemy : MonoBehaviour, Idamagable
     private Transform _pointToGoneDove;
 
     public bool isGone = false;
-    
+    public Animator Animation;
 
-   
+
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -60,6 +60,7 @@ public class Enemy : MonoBehaviour, Idamagable
         if (_healh > 0)
         {
             _healh -= damage;
+            Animation.SetTrigger("GetDamage");
         }
         _speed = _speed / 2;
        

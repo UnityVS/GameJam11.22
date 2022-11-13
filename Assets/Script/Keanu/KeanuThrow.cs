@@ -16,7 +16,7 @@ public class KeanuThrow : MonoBehaviour
     private void Update()
     {
         ChangeForceMOde();
-        ForceThrow.text = (_AddForce +_forceThrow).ToString();
+        ForceThrow.text ="Сила броска голодного Киану: " + (_AddForce +_forceThrow).ToString();
         //Debug.Log(Time.timeScale);
     }
 

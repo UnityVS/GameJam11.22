@@ -16,7 +16,7 @@ public class PointToGoneDoves : MonoBehaviour
         {
             enemy.GetComponent<Rigidbody>().velocity = Vector3.zero;
            
-            //enemy.GetComponent<Transform>().LookAt(_player);
+            enemy.GetComponent<Transform>().LookAt(_player);
 
         }
     }
