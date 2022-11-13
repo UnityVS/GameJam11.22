@@ -23,9 +23,18 @@ public class KeanuThrow : MonoBehaviour
     private void Shooting()
     {
         GameObject newBullet = Instantiate(BulletPref, BulletMaker.position, BulletMaker.rotation);
+        if (Random.Range(0, 2) == 0)
+        {
+            newBullet.GetComponent<Renderer>().material.color = Color.red;
+        }
+        else 
+        {
+            newBullet.GetComponent<Renderer>().material.color = Color.blue;
+        }
+        
         newBullet.GetComponent<Rigidbody>().AddForce(newBullet.transform.forward * (_forceThrow + _AddForce), ForceMode.Impulse);
         
-        Destroy(newBullet, 10f);
+        Destroy(newBullet, 5f);
         _AddForce = 0;
     }
     void ChangeForceMOde()
